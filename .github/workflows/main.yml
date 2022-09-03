@@ -7,9 +7,9 @@ on:
       - "dependabot/**"
     paths-ignore:
       - "doc/**"
-  schedule:
-    # Run everyday at 1am
-    - cron: "0 1 * * *"
+  //schedule:
+  //  # Run everyday at 1am
+  //  - cron: "0 1 * * *"
 
 jobs:
   build:

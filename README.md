@@ -17,4 +17,4 @@ To find out what's new, take a look at the [changelog](CHANGELOG.md).
 
 ## Getting Started
 
-Have the onboard LED flashing in under 5 minutes by following the [Quick Start guide](http://pico-go.net/docs/start/quick/) over on the [Pico-Go web site](http://pico-go.net).
+~~Have the onboard LED flashing in under 5 minutes by following the Quick Start guide over on the Pico-Go web site.~~

@@ -9,7 +9,7 @@ let build_path = path.resolve(path.join("node_modules", "@serialport", "bindings
 if (fs.existsSync(build_path)) {
     console.log("Deleting build folder..");
 
-    fs.rmdirSync(build_path, {
+    fs.rmSync(build_path, {
         recursive: true,
         force: true
     });   
@@ -18,7 +18,7 @@ if (fs.existsSync(build_path)) {
 if (fs.existsSync(bindings_path)) {
     console.log("Deleting bindings folder..");
     
-    fs.rmdirSync(bindings_path, {
+    fs.rmSync(bindings_path, {
         recursive: true,
         force: true
     });   

@@ -6,7 +6,7 @@ import Pytelnet from '../connections/pytelnet';
 import Pysocket from '../connections/pysocket';
 import Authorize from './authorize';
 import Logger from '../helpers/logger.js';
-import Utils from '../helpers/utils.js';
+import Utils from '../helpers/utils.js';  // add v1.4.8
 import _ from 'lodash';
 
 let CTRL_A = '\x01'; // raw repl

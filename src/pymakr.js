@@ -775,7 +775,8 @@ export default class Pymakr extends EventEmitter {
     let server = await this._getServerVersion();
 
     try {
-      if (semver.gte(server.version + '.0', board.version + '.0') && server.date > board.date) {
+      //if (semver.gte(server.version + '.0', board.version + '.0') && server.date > board.date) {
+      if (semver.gte(server.version , board.version) && server.date > board.date) { // modify v1.4.11
         let choice = await this.api.confirm(
           `Firmware version v${server.version} (${server.date}) is available. Would you like to download it?`,
           ['Yes', 'No']
@@ -826,10 +827,12 @@ export default class Pymakr extends EventEmitter {
 
   async _getServerVersion() {
     try {
-      let response = await fetch('https://micropython.org/download/rp2-pico/');
+      //let response = await fetch('https://micropython.org/download/rp2-pico/');
+      let response = await fetch('https://micropython.org/download/RPI_PICO/'); // modify v1.4.11
       let html = await response.text();
       
-      let m = /href="(?<url>\/resources\/firmware\/rp2-pico-[0-9]{8}-v[^"]+)"/gm.exec(html);
+      //let m = /href="(?<url>\/resources\/firmware\/rp2-pico-[0-9]{8}-v[^"]+)"/gm.exec(html);
+      let m = /href="(?<url>\/resources\/firmware\/RPI_PICO-[0-9]{8}-v[^"]+)"/gm.exec(html);  // modify v1.4.11
       let url = 'https://micropython.org' + m[1];
 
       m = /v([0-9]+\.[0-9]+(\.[0-9]+)?)/.exec(url);

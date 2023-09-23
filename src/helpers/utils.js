@@ -1,6 +1,6 @@
 'use babel';
 
-import * as util from 'util';
+// import * as util from 'util';
 import path from 'path';
 import rimraf from 'rimraf';
 import os from 'os';
@@ -20,7 +20,7 @@ export default class Utils {
   constructor(settings) {
     this.settings = settings;
     this.allowedFileTypes = this.settings.getAllowedFileTypes();
-    this._rimraf = util.promisify(rimraf).bind(rimraf);
+    // this._rimraf = util.promisify(rimraf).bind(rimraf);
   }
 
   // vscode
@@ -118,7 +118,8 @@ export default class Utils {
   }
 
   async rmdir(path) {
-    await this._rimraf(path);
+    // await this._rimraf(path);
+    await rimraf(path);
   }
 
   // vscode

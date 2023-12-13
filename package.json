@@ -296,7 +296,7 @@
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.6.3",
     "@types/vscode": "^1.68.0",
-    "@vscode/vsce": "^2.21.0",
+    "@vscode/vsce": "^2.22.0",
     "chai": "^4.3.8",
     "electron": "^25.8.1",
     "eslint": "^8.49.0",

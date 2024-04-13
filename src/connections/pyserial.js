@@ -3,7 +3,7 @@
 import * as util from 'util';
 import Logger from '../helpers/logger.js';
 import { promises as fs, constants as fsConstants } from 'fs';
-import SerialPort from 'serialport';
+import { SerialPort } from 'serialport';
 
 export default class PySerial {
   constructor(address, params, settings) {
@@ -16,7 +16,8 @@ export default class PySerial {
     let _this = this;
 
     let stream = new SerialPort(
-      address, {
+      {
+        path:     address,
         baudRate: 115200,
         autoOpen: false
       },

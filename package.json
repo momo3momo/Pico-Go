@@ -2,7 +2,7 @@
   "name": "pico-go",
   "displayName": "Pico-Go",
   "description": "Autocompletion and a REPL console for the Raspberry Pi Pico.",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "publisher": "ChrisWood",
   "homepage": "http://pico-go.net/",
   "repository": "https://github.com/cpwood/Pico-Go",
@@ -13,7 +13,7 @@
     "theme": "light"
   },
   "engines": {
-    "vscode": "^1.88.0"
+    "vscode": "^1.91.0"
   },
   "keywords": [
     "raspberry",
@@ -258,13 +258,13 @@
     "debug": "^4.3.4",
     "element-resize-detector": "1.2.4",
     "fs-extra": "^11.1.1",
-    "ftp-srv": "^4.6.2",
+    "ftp-srv": "^4.6.3",
     "lie": "^3.3.0",
     "lodash": "^4.17.21",
     "memorystream": "^0.3.1",
     "nan": "2.18.0",
     "ncp": "^2.0.0",
-    "node-abi": "3.57.0",
+    "node-abi": "3.65.0",
     "node-fetch": "^2.6.13",
     "object.assign": "^4.1.4",
     "ora": "^7.0.1",
@@ -289,10 +289,10 @@
     "@electron/rebuild": "3.6.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.6.3",
-    "@types/vscode": "^1.88.0",
-    "@vscode/vsce": "^2.25.0",
+    "@types/vscode": "^1.91.0",
+    "@vscode/vsce": "^2.31.1",
     "chai": "^4.3.8",
-    "electron": "^28.2.8",
+    "electron": "^29.4.0",
     "eslint": "^8.49.0",
     "mocha": "^10.2.0",
     "prebuild-install": "^5.3.6"

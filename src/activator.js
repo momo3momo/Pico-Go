@@ -51,15 +51,7 @@ export default class Activator {
 
     let terminal = v.terminal;
 
-    let disposable = vscode.commands.registerCommand('picogo.help',
-      function() {
-        terminal.show();
-        vscode.env.openExternal(vscode.Uri.parse(
-          'http://pico-go.net/docs/start/quick/'));
-      });
-    context.subscriptions.push(disposable);
-
-    disposable = vscode.commands.registerCommand('picogo.listCommands',
+    let disposable = vscode.commands.registerCommand('picogo.listCommands',
       function() {
         v.showQuickPick();
       });

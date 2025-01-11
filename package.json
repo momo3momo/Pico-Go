@@ -2,7 +2,7 @@
   "name": "pico-go",
   "displayName": "Pico-Go",
   "description": "Autocompletion and a REPL console for the Raspberry Pi Pico.",
-  "version": "1.4.11",
+  "version": "1.5.1",
   "publisher": "ChrisWood",
   "homepage": "http://pico-go.net/",
   "repository": "https://github.com/cpwood/Pico-Go",
@@ -13,7 +13,7 @@
     "theme": "light"
   },
   "engines": {
-    "vscode": "^1.68.0"
+    "vscode": "^1.91.0"
   },
   "keywords": [
     "raspberry",
@@ -102,10 +102,6 @@
       {
         "command": "picogo.reset.hard",
         "title": "Pico-Go > Reset > Hard"
-      },
-      {
-        "command": "picogo.help",
-        "title": "Pico-Go > Help > Getting started"
       },
       {
         "command": "picogo.extra.pins",
@@ -244,11 +240,9 @@
     }
   ],
   "scripts": {
-    "changelog": "github_changelog_generator -u cpwood -p Pico-Go --future-release v$npm_package_version",
     "copy-native": "node native_modules/copy-native.js",
     "build": "babel src --out-dir lib --source-maps",
     "build-dev": "babel src --out-dir lib --source-maps --watch",
-    "postinstall": "node native_modules/copy-native.js",
     "package": "vsce package",
     "delete-vsix": "rm *.vsix",
     "vscode:prepublish": "npm ci && npm prune"
@@ -264,13 +258,13 @@
     "debug": "^4.3.4",
     "element-resize-detector": "1.2.4",
     "fs-extra": "^11.1.1",
-    "ftp-srv": "^4.6.2",
+    "ftp-srv": "^4.6.3",
     "lie": "^3.3.0",
     "lodash": "^4.17.21",
     "memorystream": "^0.3.1",
     "nan": "2.18.0",
     "ncp": "^2.0.0",
-    "node-abi": "3.47.0",
+    "node-abi": "3.65.0",
     "node-fetch": "^2.6.13",
     "object.assign": "^4.1.4",
     "ora": "^7.0.1",
@@ -280,7 +274,7 @@
     "rxjs": "^7.8.1",
     "safe-buffer": "^5.2.1",
     "semver": "^7.5.4",
-    "serialport": "^9.2.8",
+    "serialport": "^12.0.0",
     "spdx-correct": "^3.2.0",
     "spdx-exceptions": "^2.3.0",
     "telnet-client": "^2.0.8",
@@ -292,13 +286,13 @@
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.20",
     "@babel/preset-env": "^7.22.20",
-    "@electron/rebuild": "3.3.0",
+    "@electron/rebuild": "3.6.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.6.3",
-    "@types/vscode": "^1.68.0",
-    "@vscode/vsce": "^2.21.0",
+    "@types/vscode": "^1.91.0",
+    "@vscode/vsce": "^2.31.1",
     "chai": "^4.3.8",
-    "electron": "^25.8.1",
+    "electron": "^29.4.0",
     "eslint": "^8.49.0",
     "mocha": "^10.2.0",
     "prebuild-install": "^5.3.6"

@@ -2,7 +2,7 @@
   "name": "pico-go",
   "displayName": "Pico-Go",
   "description": "Autocompletion and a REPL console for the Raspberry Pi Pico.",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "publisher": "ChrisWood",
   "homepage": "http://pico-go.net/",
   "repository": "https://github.com/cpwood/Pico-Go",
@@ -13,7 +13,7 @@
     "theme": "light"
   },
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.146.0"
   },
   "keywords": [
     "raspberry",
@@ -288,10 +288,10 @@
     "@electron/rebuild": "^4.0.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "^25.3.0",
-    "@types/vscode": "^1.109.0",
-    "@vscode/vsce": "^3.7.1",
+    "@types/vscode": "^1.146.0",
+    "@vscode/vsce": "^4.1.1",
     "chai": "^6.2.2",
-    "electron": "^39.3.0",
+    "electron": "^43.8.10",
     "eslint": "^10.0.0",
     "mocha": "^11.7.5",
     "prebuild-install": "^7.1.3"
